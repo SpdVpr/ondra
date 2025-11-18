@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="container">
         <div className="banner-two-main-wrapper">
           <div className="row align-items-center">
-            <div className="col-lg-6 order-lg-2">
+            <div className="col-lg-6 order-2 order-lg-2">
               <div className="banner-right-content">
                 <div className="main-img">
                   <Image
@@ -31,7 +31,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 order-lg-1 mt--100" style={{position: 'relative', zIndex: 2}}>
+            <div className="col-lg-6 order-1 order-lg-1 mt--100" style={{position: 'relative', zIndex: 2}}>
               <div className="inner">
                 <span className="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                   Jsem
