@@ -50,6 +50,14 @@ export default function Header1({
                     </a>
                   </div>
                 </div>
+                <div className="hamberger-menu d-block d-xl-none">
+                  <button
+                    className="hamberger-button"
+                    onClick={openMobilemenu}
+                  >
+                    <i className="fa-sharp fa-regular fa-bars" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>

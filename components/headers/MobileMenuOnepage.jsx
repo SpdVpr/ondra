@@ -29,20 +29,20 @@ export default function MobileMenuOnepage() {
         <div ref={innerRef} className="inner">
           <div className="header-top">
             <div className="logo">
-              <a href="index.html" className="logo-area">
+              <a href="/" className="logo-area">
                 <img
                   className="logo-dark"
-                  alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
-                  src="/assets/images/logo/white-logo-reeni.png"
-                  width={121}
-                  height={41}
+                  alt="OMGraphics - Graphic Design Portfolio"
+                  src="/assets/images/logo/omega_white.svg"
+                  width={200}
+                  height={36}
                 />
                 <img
                   className="logo-white"
-                  alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
-                  src="/assets/images/logo/logo-white.png"
-                  width={121}
-                  height={40}
+                  alt="OMGraphics - Graphic Design Portfolio"
+                  src="/assets/images/logo/omega_white.svg"
+                  width={200}
+                  height={36}
                 />
               </a>
             </div>
@@ -57,19 +57,19 @@ export default function MobileMenuOnepage() {
           </div>
           <OnepageNavMobile />
           <div className="social-wrapper mt--40">
-            <span className="subtitle">find with me</span>
+            <span className="subtitle">Najdete mě na</span>
             <div className="social-link">
-              <a href="#">
+              <a href="https://www.instagram.com/frank_the_cyberhorse/" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-instagram" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ond%C5%99ej-macoun-2a164511b/" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-linkedin-in" />
               </a>
-              <a href="#">
-                <i className="fa-brands fa-twitter" />
-              </a>
-              <a href="#">
+              <a href="https://www.facebook.com/ondrej.macoun" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-facebook-f" />
+              </a>
+              <a href="mailto:info@omgraphics.cz">
+                <i className="fa-regular fa-envelope" />
               </a>
             </div>
           </div>

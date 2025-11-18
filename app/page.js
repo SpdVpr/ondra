@@ -11,6 +11,7 @@ import Portofolio from "@/components/common/Portfolio";
 import Testimonials from "@/components/common/Testimonials";
 import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
+import MobileMenuOnepage from "@/components/headers/MobileMenuOnepage";
 
 export const metadata = {
   title:
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <>
       <Header1 />
+      <MobileMenuOnepage />
       <Hero />
       <AboutContent />
       <Services />
