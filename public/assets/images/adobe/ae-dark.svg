@@ -1,0 +1,17 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ae-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9999FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6666FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="40" cy="40" r="38" fill="url(#ae-bg)"/>
+  <rect x="15" y="18" width="50" height="30" rx="3" fill="#FFFFFF" opacity="0.2"/>
+  <circle cx="25" cy="25" r="6" fill="#CCCCFF" opacity="0.4"/>
+  <circle cx="55" cy="25" r="6" fill="#CCCCFF" opacity="0.4"/>
+  <circle cx="25" cy="41" r="6" fill="#CCCCFF" opacity="0.4"/>
+  <circle cx="55" cy="41" r="6" fill="#CCCCFF" opacity="0.4"/>
+  <polygon points="35,28 35,38 43,33" fill="#FFFFFF" opacity="0.8"/>
+  <text x="25" y="65" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">A</text>
+  <text x="43" y="65" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">e</text>
+</svg>
