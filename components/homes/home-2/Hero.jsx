@@ -57,7 +57,7 @@ export default function Hero() {
                   brand manuály až po <span>velkoformátové tisky</span>. Zajišťuji celý proces od konceptu
                   přes realizaci až po finální produkci a doručení.
                 </p>
-                <div className="button-area-banner-two tmp-scroll-trigger tmp-fade-in animation-order-4">
+                <div className="button-area-banner-two tmp-scroll-trigger tmp-fade-in animation-order-4 d-none d-md-block">
                   <a
                     className="tmp-btn hover-icon-reverse radius-round"
                     href="#contacts"

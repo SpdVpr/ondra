@@ -17,7 +17,8 @@ export default function Testimonials() {
           style={{
             margin: "0 auto",
             maxWidth: "100%",
-            height: "auto"
+            height: "auto",
+            padding: "0 20px"
           }}
           priority
           quality={100}
