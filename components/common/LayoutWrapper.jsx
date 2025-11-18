@@ -383,6 +383,53 @@ export default function LayoutWrapper({ children }) {
 
     return () => observer.disconnect();
   }, [pathname]);
+
+  // Word-based split animation for better text wrapping
+  useEffect(() => {
+    const animatedTextElements = document.querySelectorAll(".tmp-word-split");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const element = entry.target;
+
+            // Reset if needed
+            if (element.animation) {
+              element.animation.progress(1).kill();
+              element.split.revert();
+            }
+
+            element.split = new SplitText(element, {
+              type: "words",
+            });
+
+            gsap.set(element, { perspective: 400 });
+
+            gsap.set(element.split.words, {
+              opacity: 0,
+              y: "20",
+            });
+
+            element.animation = gsap.to(element.split.words, {
+              y: "0",
+              opacity: 1,
+              duration: 0.6,
+              ease: "power2.out",
+              stagger: 0.03,
+            });
+
+            observer.unobserve(element); // Unobserve to avoid repeat
+          }
+        });
+      },
+      { threshold: 0.1 }
+    ); // Adjust threshold if needed
+
+    animatedTextElements.forEach((element) => observer.observe(element));
+
+    return () => observer.disconnect();
+  }, [pathname]);
   useEffect(() => {
     const WOW = require("@/utlis/wow");
     const wow = new WOW.default({

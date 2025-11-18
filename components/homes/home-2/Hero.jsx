@@ -51,7 +51,7 @@ export default function Hero() {
                     </span>
                   </span>
                 </h1>
-                <p className="disc tmp-scroll-trigger tmp-title-split tmp-fade-in animation-order-3">
+                <p className="disc tmp-scroll-trigger tmp-word-split animation-order-3">
                   Grafice se věnuji již přes <span>dvanáct let</span>. Nabízím komplexní služby
                   v oblasti grafiky - od <span>návrhu reklamních tiskovin</span>, přes firemní identitu,
                   brand manuály až po <span>velkoformátové tisky</span>. Zajišťuji celý proces od konceptu
