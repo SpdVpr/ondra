@@ -2,7 +2,6 @@ import { closeMobilemenu2 } from "@/utlis/toggleMobilemenu";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { id: 1, href: "#home", text: "Home" },
   { id: 2, href: "#about", text: "O mně" },
   { id: 3, href: "#service", text: "Služby" },
   { id: 4, href: "#portfolio", text: "Portfolio" },

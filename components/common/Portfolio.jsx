@@ -35,8 +35,8 @@ export default function Portofolio({ isLight = false }) {
             className="tmp-scroll-trigger tmp-fade-in animation-order-1"
             alt="Portfolio"
             src="/assets/images/logo/portfolio.svg"
-            width={800}
-            height={163}
+            width={560}
+            height={114}
             style={{
               margin: "0 auto",
               maxWidth: "100%",
@@ -52,9 +52,8 @@ export default function Portofolio({ isLight = false }) {
               {categories.map((category) => (
                 <li key={category}>
                   <button
-                    className={`nav-link ${
-                      activeCategory === category ? "active" : ""
-                    }`}
+                    className={`nav-link ${activeCategory === category ? "active" : ""
+                      }`}
                     onClick={() => setActiveCategory(category)}
                   >
                     {category}
@@ -75,9 +74,8 @@ export default function Portofolio({ isLight = false }) {
                         <div className="img-box v2">
                           <Link
                             className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
-                            href={`/project-details${isLight ? "-white" : ""}/${
-                              item.slug
-                            }`}
+                            href={`/project-details${isLight ? "-white" : ""}/${item.slug
+                              }`}
                           >
                             <Image
                               className="w-100"
@@ -93,9 +91,8 @@ export default function Portofolio({ isLight = false }) {
                         <div className="content-left">
                           <h3 className="portfolio-card-title">
                             <Link
-                              href={`/project-details${
-                                isLight ? "-white" : ""
-                              }/${item.slug}`}
+                              href={`/project-details${isLight ? "-white" : ""
+                                }/${item.slug}`}
                             >
                               {item.title}
                             </Link>
@@ -114,9 +111,8 @@ export default function Portofolio({ isLight = false }) {
                         </div>
                         <Link
                           className="tmp-btn hover-icon-reverse radius-round btn-border btn-md"
-                          href={`/project-details${isLight ? "-white" : ""}/${
-                            item.slug
-                          }`}
+                          href={`/project-details${isLight ? "-white" : ""}/${item.slug
+                            }`}
                         >
                           <span className="icon-reverse-wrapper">
                             <span className="btn-text">Podrobnosti</span>

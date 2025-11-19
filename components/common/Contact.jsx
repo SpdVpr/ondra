@@ -97,8 +97,8 @@ export default function Contact({
                   <Image
                     alt="Contact"
                     src="/assets/images/ondra/contact.svg"
-                    width={800}
-                    height={163}
+                    width={560}
+                    height={114}
                     style={{
                       maxWidth: "100%",
                       height: "auto"

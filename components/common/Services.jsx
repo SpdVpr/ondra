@@ -5,11 +5,11 @@ import { services } from "@/data/services";
 import Link from "next/link";
 export default function Services({ isLight = false }) {
   return (
-    <section className="service-area" style={{paddingTop: '60px', paddingBottom: '60px'}}>
+    <section className="service-area" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
       <div className="container">
         <div className="row justify-content-center">
           {services.map((service) => (
-            <div className="col-lg-3 col-md-4 col-sm-6" key={service.id}>
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6" key={service.id}>
               <div
                 className={`service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-${service.animationOrder} tmp-link-animation`}
               >
@@ -23,9 +23,8 @@ export default function Services({ isLight = false }) {
                 </div>
                 <h4 className="service-title">
                   <Link
-                    href={`/service-details${isLight ? "-white" : ""}/${
-                      service.slug
-                    }`}
+                    href={`/service-details${isLight ? "-white" : ""}/${service.slug
+                      }`}
                   >
                     {service.title}
                   </Link>

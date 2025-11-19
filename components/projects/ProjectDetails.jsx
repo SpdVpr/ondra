@@ -1,13 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Appointment from "./Appointment";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import ImageLightbox from "../modals/ImageLightbox";
 export default function ProjectDetails({ portfolioItem }) {
   const [lightboxImage, setLightboxImage] = useState(null);
-  
+
   return (
     <div className="project-details-area-wrapper tmp-section-gap">
       <div className="container">
@@ -132,9 +131,6 @@ export default function ProjectDetails({ portfolioItem }) {
                 </div>
               )}
             </div>
-            {/* Tpm Get In touch start */}
-            <Appointment />
-            {/* Tpm Get In touch End */}
           </div>
           <div className="col-lg-4">
             <div className="signle-side-bar project-details-area tmponhover">
@@ -159,9 +155,9 @@ export default function ProjectDetails({ portfolioItem }) {
           </div>
         </div>
       </div>
-      <ImageLightbox 
-        imageSrc={lightboxImage} 
-        onClose={() => setLightboxImage(null)} 
+      <ImageLightbox
+        imageSrc={lightboxImage}
+        onClose={() => setLightboxImage(null)}
       />
     </div>
   );

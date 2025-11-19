@@ -33,16 +33,16 @@ export default function MobileMenuOnepage() {
                 <img
                   className="logo-dark"
                   alt="OMGraphics - Graphic Design Portfolio"
-                  src="/assets/images/logo/omega_white.svg"
+                  src="/assets/images/logo/omgraphics_logo.svg"
                   width={200}
-                  height={36}
+                  height={28}
                 />
                 <img
                   className="logo-white"
                   alt="OMGraphics - Graphic Design Portfolio"
-                  src="/assets/images/logo/omega_white.svg"
+                  src="/assets/images/logo/omgraphics_logo.svg"
                   width={200}
-                  height={36}
+                  height={28}
                 />
               </a>
             </div>

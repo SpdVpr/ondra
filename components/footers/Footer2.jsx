@@ -28,7 +28,6 @@ export default function Footer2({
   };
 
   const footerLinks = [
-    { label: "Home", href: "#" },
     { label: "About", href: "#about" },
     { label: "Services", href: "#service" },
     { label: "Portfolio", href: "#portfolio" },

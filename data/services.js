@@ -10,9 +10,9 @@ export const services = [
   },
   {
     id: 2,
-    icon: "/assets/images/adobe/after-effects.png",
-    title: "After Effects",
-    projects: "Motion graphics",
+    icon: "/assets/images/adobe/lightroom.png",
+    title: "Lightroom",
+    projects: "Foto úpravy",
     animationOrder: "2",
   },
   {
