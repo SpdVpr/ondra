@@ -30,6 +30,29 @@ export async function POST(request) {
 
         // Debug Password (Safe)
         const pass = process.env.SMTP_PASS;
+        console.log('DEBUG: SMTP_PASS length:', pass.length);
+        console.log('DEBUG: SMTP_PASS start:', pass.substring(0, 2));
+        console.log('DEBUG: SMTP_PASS end:', pass.substring(pass.length - 2));
+
+        console.log('Creating transporter with host:', process.env.SMTP_HOST);
+
+        // Create a transporter using SMTP credentials
+        const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_HOST,
+            port: 587, // Try 587 (STARTTLS)
+            secure: false, // false for 587
+            auth: {
+                user: process.env.SMTP_USER,
+                pass: process.env.SMTP_PASS,
+            },
+            debug: true, // Enable debug logs
+            logger: true // Log to console
+        });
+
+        console.log('Verifying connection...');
+        await transporter.verify();
+        console.log('Connection verified');
+
         const mailOptions = {
             from: `"${name}" <${process.env.SMTP_USER}>`,
             to: process.env.CONTACT_EMAIL_TO,
