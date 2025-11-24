@@ -66,7 +66,7 @@ export default function Contact({
                     </span>
                     <div className="ft-link-wrap">
                       <h4 className="link-title">E-mail:</h4>
-                      <a href="mailto:info@omgraphics.cz">info@omgraphics.cz</a>
+                      <a href="mailto:ondrej.macoun@omgraphics.cz">ondrej.macoun@omgraphics.cz</a>
                     </div>
                   </li>
                   <li className="tmp-scroll-trigger tmp-fade-in animation-order-2">
@@ -75,7 +75,7 @@ export default function Contact({
                     </span>
                     <div className="ft-link-wrap">
                       <h4 className="link-title">Lokace:</h4>
-                      <div>České Budějovice, Česká republika</div>
+                      <div>Praha</div>
                     </div>
                   </li>
                   <li className="tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
@@ -84,7 +84,7 @@ export default function Contact({
                     </span>
                     <div className="ft-link-wrap">
                       <h4 className="link-title">Telefon:</h4>
-                      <a href="tel:+420123456789">+420 123 456 789</a>
+                      <a href="tel:+420728220787">+420 728 220 787</a>
                     </div>
                   </li>
                 </ul>

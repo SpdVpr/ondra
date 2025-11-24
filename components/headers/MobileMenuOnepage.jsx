@@ -68,7 +68,7 @@ export default function MobileMenuOnepage() {
               <a href="https://www.facebook.com/ondrej.macoun" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-facebook-f" />
               </a>
-              <a href="mailto:info@omgraphics.cz">
+              <a href="mailto:ondrej.macoun@omgraphics.cz">
                 <i className="fa-regular fa-envelope" />
               </a>
             </div>

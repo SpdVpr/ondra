@@ -83,7 +83,7 @@ export default function Footer3({
                     <a href="https://www.facebook.com/ondrej.macoun" target="_blank" rel="noopener noreferrer">
                       <i className="fa-brands fa-facebook-f" />
                     </a>
-                    <a href="mailto:info@omgraphics.cz">
+                    <a href="mailto:ondrej.macoun@omgraphics.cz">
                       <i className="fa-regular fa-envelope" />
                     </a>
                   </div>
@@ -126,13 +126,13 @@ export default function Footer3({
                       <span className="ft-icon">
                         <i className="fa-solid fa-envelope" />
                       </span>
-                      <a href="mailto:info@omgraphics.cz">info@omgraphics.cz</a>
+                      <a href="mailto:ondrej.macoun@omgraphics.cz">ondrej.macoun@omgraphics.cz</a>
                     </li>
                     <li>
                       <span className="ft-icon">
                         <i className="fa-solid fa-location-dot" />
                       </span>
-                      Česká republika
+                      Praha
                     </li>
                   </ul>
                 </div>
