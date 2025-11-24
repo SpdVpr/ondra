@@ -2,14 +2,141 @@ import { slugify } from "@/utlis/slugify";
 
 export const portfolioItems = [
   {
+    id: 95,
+    animationOrder: 1,
+    imageSrc: "/assets/images/ondra/Wargaming/a_side_vinyl.png",
+    width: 1920,
+    height: 1572,
+    title: "Wargaming.net - Wargaming.net",
+    tags: ["Print", "Merchandise"],
+    categories: ["Tiskoviny", "Merchandise"],
+    client: "Wargaming.net",
+    size: "310x310mm",
+    date: "2023",
+    tools: ["Adobe Photoshop"],
+    description: `
+      <p>V rámci práce pro Xzone.cz jsem se dostal k unikátní spolupráci s herním vývojářem Wargaming.net stojícím za herními tituly World of Tanks, Warthunder a dalšími. Projekt byl zaměřený na prvně zmíněný titul a úkolem bylo rozšířit stávající produktovou nabídku o další merchandise. Jelikož vinylové desky jsou mou velkou zálibou, navrhl jsem pro ně kompletní zajištění designu a produkce instrumentální hudby z World of Tanks s pomocí českého výrobce desek GZ media. Návrh pak byl mnou sestaven prostřednictvím oficiálních designů, grafik a fontů z produkce Wargaming tak, aby dobře odrážel podstatu samotné hry. Samotné desky byli také designově upraveny, aby barevně vytvářeli dojem kouře z vystřeleného dělového náboje.</p>
+    `,
+    gallery: [
+      "/assets/images/ondra/Wargaming/front_shot_a copy.png",
+      "/assets/images/ondra/Wargaming/inside_shot_a copy.png",
+      "/assets/images/ondra/Wargaming/produkt_ilustrace_01.jpg",
+      "/assets/images/ondra/Wargaming/produkt_ilustrace_02.jpg",
+    ],
+  },
+  {
+    id: 96,
+    animationOrder: 1,
+    imageSrc: "/assets/images/ondra/Pizza Club Neapol/Brand book - koncept/Artboard 2@300x.png",
+    width: 1920,
+    height: 1572,
+    title: "Pizza Club Neapol - Brand manual",
+    tags: ["Design", "Brand"],
+    categories: ["Design", "Branding"],
+    client: "Máj – house of Fun",
+    size: "N/A",
+    date: "2025",
+    tools: ["Adobe Illustrator"],
+    description: `
+      <p>Jak vytvořit brand manual značce, která neexistuje a nemá ponětí o tom, jak chce vypadat? Nejdřív je třeba zjistit, jak se vlastně značka chce prezentovat a jaký target audience chceme oslovit. Při tvorbě brandu Pizza club Neapol jsem měl v hlavě tento koncept: chceme oslovit mladé publikum, takže jednoduché ale neokoukané tvary, snadná zapamatovatelnost a rozlišení oproti ostatním “klasickým” pizzeriím. Důežité je chytře zaujmout. Proto jsem zvolil moderní a tučný font, který jsem následně upravoval tak, aby zde byl definován trojúhleníkový tvar pizzy. V designu loga je vidět, jak spolu jednotlivé části souvisí. Barevnost byla zvolena klasická, ovšem s trochu živějšími odstíny. Následně jsem brand použil na několik produktech spojených s provozem pizzeria. Celý koncept byl nakonec změněn, ale i tak jsem na tento zkrácený manual pyšný, jelikož šlo o produkt jediného dne včetně kreativy.</p>
+    `,
+    gallery: [
+      "/assets/images/ondra/Pizza Club Neapol/Brand book - koncept/Artboard 1@300x.png",
+      "/assets/images/ondra/Pizza Club Neapol/Brand book - koncept/Artboard 3@300x.png",
+      "/assets/images/ondra/Pizza Club Neapol/Brand book - koncept/Artboard 5@300x.png",
+      "/assets/images/ondra/Pizza Club Neapol/Brand book - koncept/Artboard 6 copy 2@300x.png",
+      "/assets/images/ondra/Pizza Club Neapol/Brand book - koncept/Artboard 6 copy@300x.png",
+      "/assets/images/ondra/Pizza Club Neapol/Brand book - koncept/Artboard 6@300x.png",
+    ],
+  },
+  {
+    id: 97,
+    animationOrder: 1,
+    imageSrc: "/assets/images/ondra/Pizza Club Neapol/Brand- final/logo_glow@300x.png",
+    width: 1920,
+    height: 1572,
+    title: "Pizza Club Neapol - Brand",
+    tags: ["Design", "Brand", "Merchandise"],
+    categories: ["Design", "Branding", "Merchandise"],
+    client: "Máj – house of Fun",
+    size: "N/A",
+    date: "probíhá",
+    tools: ["Adobe Illustrator"],
+    description: `
+      <p>Finální design loga Pizza Club Neapol byl vytvořen pomocí AI a bylo tedy nutné ho přeměnit do použitelné vektorové podoby. Na to navázat provozní produkty – krabice na pizzu, vizitky, samolepky a další. Zadavatel si přál, aby motiv neonového fontu na cihlovém pozadí byl reflektován na všech brandovaných předmětech. V rámci další kreativy jsem přidělil brandu textový font, který bude používaný v prezentaci značky. Brand pizzerie se neustále buduje a budou přibýbat další produkty. Toto je jen začátek.</p>
+    `,
+    gallery: [
+      "/assets/images/ondra/Pizza Club Neapol/Brand- final/mock_up krabice.jpg",
+      "/assets/images/ondra/Pizza Club Neapol/Brand- final/vizitka_back.png",
+      "/assets/images/ondra/Pizza Club Neapol/Brand- final/vizitka_front.png",
+    ],
+  },
+  {
+    id: 98,
+    animationOrder: 1,
+    imageSrc: "/assets/images/ondra/Levels-Fotostena/fotka_out.jpg",
+    width: 1920,
+    height: 1572,
+    title: "Levels - Fotostěna",
+    tags: ["Print", "Large print", "Design"],
+    categories: ["Tiskoviny", "Design"],
+    client: "Levels Prague",
+    size: "13x3m",
+    date: "2025",
+    tools: ["Adobe Photoshop", "Openart AI"],
+    description: `
+      <p>Jak zaujmout návštěvníky venkovního prostoru v rámci grand openingu nového patra a přitom skrýt zázemí pro zaměstnance. Například třináct metrů dlouhou fotostěnou s tématem nově otevřeného prostoru. Zadání bylo jednoduché – “Ať to zaujme!” Ve spojení s kosmonautem, který je maskotem herního Levels, jsem vytvořil podvodní království, které začleňuje dominantu nového prostoru – růžové žraloky. Doplněk pak tvoří samotné hry a atrakce, které si návštěvník zde může vyzkoušet. Tím, že jsem zde měl vice kreativní svobody a deadline byl smrtící (do druhého dne), vytvořil jsem celou fotostěnu ve skvělém časovém okně 6 hodin.</p>
+    `,
+    gallery: [
+      "/assets/images/ondra/Levels-Fotostena/fotka_close.jpg",
+      "/assets/images/ondra/Levels-Fotostena/fotka_out2.jpg",
+      "/assets/images/ondra/Levels-Fotostena/fotostena copy.jpg",
+    ],
+  },
+  {
+    id: 99,
+    animationOrder: 1,
+    imageSrc: "/assets/images/ondra/Levels-Menu/01_02.png",
+    width: 1920,
+    height: 1572,
+    title: "Levels - Menu",
+    tags: ["Print", "Design", "Menu"],
+    categories: ["Tiskoviny", "Design"],
+    client: "Levels Prague",
+    size: "290x250mm",
+    date: "2025",
+    tools: ["Adobe Illustrator", "Adobe Photoshop", "Openart AI"],
+    description: `
+      <p>Pracovat na menu pro herní koncept Levels bylo pro mě velmi osvěžující. Měl jsem v rámci kreativity prakticky volnou roku a celkový tón měl být ve spojení moderního pojetí s arkádovými hrami a novodobou syntézou herní a filmové kultury 80. let.</p>
+      <p>Zvolil jsem černé pozadí se světlým fontem, který bude v rámci přesvětleného provozu lépe čitelný a dále se zaměřil na to, aby menu bylo hravé, barevné a přístupné všem generacím a národnostem.</p>
+      <p>Zatímco drink sekce je v jednoduchém, ale stylovém podání v kombinaci s moodovými fotkami, většina jídel je přefocena, uhlazena pomocí AI a použita společně s různými narážkami na popkulturu lehkými pomrkknutími. Například sekce “Něco na zobání”, která je doplněna hlavou kohouta ve stylu synthwave, nebo barbar s obouručním mečem, který odkazuje na velikost burgru jako na “pořádný obouručák”, popřípadě varování u Mega tácu, který je označen ikonkou Godzilly, že budete potřebovat buď osm normálních jedlíků, nebo pět pořádných vyzyvatelů.</p>
+    `,
+    gallery: [
+      "/assets/images/ondra/Levels-Menu/01_01.png",
+      "/assets/images/ondra/Levels-Menu/02_01.png",
+      "/assets/images/ondra/Levels-Menu/02_02.png",
+      "/assets/images/ondra/Levels-Menu/03_01.png",
+      "/assets/images/ondra/Levels-Menu/03_02.png",
+      "/assets/images/ondra/Levels-Menu/fotka_done.jpg",
+      "/assets/images/ondra/Levels-Menu/fotka_done2.jpg",
+    ],
+  },
+  {
     id: 1,
     animationOrder: 1,
     imageSrc: "/assets/images/ondra/tricko-web.jpg",
     width: 1920,
     height: 1572,
-    title: "Levels - Merchandise",
-    tags: ["Illustrator", "InDesign"],
-    categories: ["Design", "Tiskoviny", "Branding"],
+    title: "Merchandise Levels",
+    tags: ["Print", "Merchandise"],
+    categories: ["Tiskoviny", "Merchandise"],
+    client: "Levels Prague",
+    size: "dle produktu",
+    date: "2025",
+    tools: ["Adobe Photoshop", "Adobe Illustrator", "Openart AI"],
+    description: `
+      <p>Ve spolupráci s herním konceptem Levels v rámci Máj – House of Fun jsem vytvořil merchandise s cílovou skupinou děti a dospívající. Hlavním tématem byl kosmonaut, jakožto maskot a hlavní prvek komunikace. Dále pak modrá kostra, která ve své skutečné skleněné podobě zdobí čtvrté patro Levels nad barem. Tričko je zaměřené spíš na young adult obecentsvo a stalo sse součástí možných výher. Pyžamo pak bylo předmětem influencerského stuntu, kde skupina fanoušků přespávala na jednotlivých patrech. V podobném grafickém vyznění se vytvořili take ručníky, papuče a další drobný merchandise. Dalším zmíněným produktem jsou pak plechovky s energetickým nápojem na přírodní bázi, který vznikl ve spolupráci s výrobcem Plechovka.cz</p>
+    `,
     gallery: [
       "/assets/images/ondra/plechovky-web.jpg",
       "/assets/images/ondra/pyzamo-web.jpg",
@@ -22,9 +149,16 @@ export const portfolioItems = [
     width: 1939,
     height: 1572,
     title: "Fly Vista - menu",
-    tags: ["Illustrator", "InDesign"],
-    categories: ["Design", "Tiskoviny", "Branding"],
+    tags: ["Print", "Design", "Menu"],
+    categories: ["Tiskoviny", "Design"],
     slug: "fly-vista",
+    client: "Máj – House of Fun",
+    size: "31x26cm",
+    date: "2025",
+    tools: ["Adobe Illustrator", "Adobe lightroom"],
+    description: `
+      <p>Fly Vista je elegantní restaurace a bar na osmém patře Máj – House of fun jejíž filozofie je jednoduše zábava pro všechny po celý den. Menu by tedy mělo odrážet hodnoty – dostupný luxus a zábava. Při tvorbě menu jsem měl z hlediska konceptu a zpracování volnou ruku a zvolil jsem kombinaci krásných fotek, elegantního fontu a zlaté barvy. Někdo by mohl říct, že fotky do menu jsou přežitkem, ale moje filozofie je, že člověk přeci jen víc konzumuje očima a mnohdy cizokrajný název jídla mu nezaplní pusu slinami, ale spíš hlavu otázkami. Fotky jsou navíc hlavně moodové a měli by hlavně navodit atmosféru daných pokrmů, aneb co můžu čekat, když se rozhodnu dát si hlavní chod. Menu je rozdělené na jídelní a drinkovou sekci a každá dvoustrana, ačkoliv se formou drží celého konceptu, funguje samostatně. Toto bylo I praktické řešení, jelikož každá sekce má jiný počet položek s různými délkami názvů a občas byla vcelku výzva uzpůsobit tomu velikost fotek a fontů. Jak se to povedlo posuďte sami.</p>
+    `,
     gallery: [
       "/assets/images/ondra/fly-vista/01_01.jpg",
       "/assets/images/ondra/fly-vista/01_02.jpg",
@@ -40,10 +174,16 @@ export const portfolioItems = [
     imageSrc: "/assets/images/ondra/Maj/mockup.jpg",
     width: 1939,
     height: 1572,
-    title: "Máj - krabičky cukroví",
-    tags: ["Illustrator", "InDesign"],
-    categories: ["Design", "Branding", "Tiskoviny"],
-    slug: "maj-cukrovi",
+    title: "Máj – House of Fun – Obaly na cukroví",
+    tags: ["Print", "Merchandise"],
+    categories: ["Tiskoviny", "Merchandise"],
+    client: "Máj – House of Fun",
+    size: "80x140x50 mm",
+    date: "2025",
+    tools: ["Adobe Photoshop", "Adobe Illustrator"],
+    description: `
+      <p>Pro Máj – House of Fun jsem zpracoval vzhled, velikost a zajistil produkci pro cukroví, které bude sloužit jako prodejní a marketingový artikl. Inspirace byla dána zadavatelem v podobě produktů, které momentálně nabízí český výrobce Myšák. V obalu je zachycen elegantin tvar srdce a fotka každého produktu, převedena do digitální podoby a následně upravena. Design je pak doplněn o loga, včetně podpisu šéfcukráře a křídel, které symbolizují samotnou budovu a fungují jako prvek marketingové komunikace. Největší výzvou v tomto případě bylo vytvoři předvýrobní vzorek a reálně vyzkoušet, kolik gramů každého cukroví se vejde do krabičky, aby na zadní straně mohla být jasně stanovena gramáž a tedy i výživové hodnoty.</p>
+    `,
     gallery: [
       "/assets/images/ondra/Maj/Artboard 1@300x.png",
       "/assets/images/ondra/Maj/Artboard 1 copy 4@300x.png",
@@ -59,10 +199,17 @@ export const portfolioItems = [
     imageSrc: "/assets/images/ondra/MF dnes/01_uvod.jpg",
     width: 1939,
     height: 1572,
-    title: "Máj - MS dnes příloha",
-    tags: ["Illustrator", "InDesign"],
-    categories: ["Design", "Tiskoviny", "Branding"],
+    title: "Příloha MF dnes – Máj",
+    tags: ["Print"],
+    categories: ["Tiskoviny"],
     slug: "maj-ms-dnes",
+    client: "Máj – House of Fun",
+    size: "420x555mm",
+    date: "2025",
+    tools: ["Adobe Illustrator"],
+    description: `
+      <p>“Potřebujeme odprezentovat Máj – House of fun na dvoustraně přílohy Mladé fronty. Musí tam být zmíněno každé patro.” Tak znělo zadání. V těchto případech, kdy máte prázdné plátno, minimální pokyny a smrtící deadline je vždy těžké se rozhodnout, kde vůbec začít. Výběrem fotografií, volbou vhodného fontu, sazbou textu, celkovým konceptem, nebo uspořádáním? V mém případě jde o oragnizovaný chaos, kde vložím všechny ingredience na pracovní plochu a začnu je sestavovat. Něco funguje, něco ne, něco je třeba jen trochu pozměnit. Dokud z toho nevznikne projekt, který je graficky použitelný. Pak se na to člověk musí podívat očima čtenáře a zjistit, zda-li je to i praktické řešení. Myslím, že zde se nám to povedlo a článek dobře reprezentuje to, co byste měli v Máj – House of fun najít a měl by vás přilákat nejen obsahem, ale i formou.</p>
+    `,
     gallery: [
       "/assets/images/ondra/MF dnes/02_Vista.jpg",
       "/assets/images/ondra/MF dnes/03_Levels BIT.jpg",

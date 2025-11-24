@@ -34,7 +34,7 @@ export default function Portofolio({ isLight = false }) {
           <Image
             className="tmp-scroll-trigger tmp-fade-in animation-order-1"
             alt="Portfolio"
-            src="/assets/images/logo/portfolio.svg"
+            src="/assets/images/ondra/port_urpava.svg"
             width={560}
             height={114}
             style={{

@@ -11,7 +11,7 @@ export default function Testimonials() {
         <Image
           className="tmp-scroll-trigger tmp-fade-in animation-order-1"
           alt="Reference"
-          src="/assets/images/ondra/reference.svg"
+          src="/assets/images/ondra/ref_uprava.svg"
           width={560}
           height={114}
           style={{

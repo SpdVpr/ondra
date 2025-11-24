@@ -23,15 +23,15 @@ export default function Hero() {
                   <Image
                     className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
                     alt="banner-img"
-                    src="/assets/images/foto-moje.svg"
+                    src="/assets/images/ondra/foto_uprava.svg"
                     width={850}
                     height={1275}
-                    style={{width: 'auto', height: 'auto'}}
+                    style={{ width: 'auto', height: 'auto' }}
                   />
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 order-1 order-lg-1 mt--100" style={{position: 'relative', zIndex: 2}}>
+            <div className="col-lg-6 order-1 order-lg-1 mt--100" style={{ position: 'relative', zIndex: 2 }}>
               <div className="inner">
                 <span className="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                   Jsem

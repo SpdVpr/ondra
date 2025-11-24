@@ -96,12 +96,14 @@ export default function Contact({
                 <div className="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
                   <Image
                     alt="Contact"
-                    src="/assets/images/ondra/contact.svg"
+                    src="/assets/images/ondra/contact_uprava.svg"
                     width={560}
                     height={114}
                     style={{
+                      margin: "0 auto",
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "auto",
+                      padding: "0 20px"
                     }}
                     priority
                     quality={100}
