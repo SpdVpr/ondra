@@ -2,33 +2,55 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
+    console.log('API Route called');
     try {
         const body = await request.json();
         const { name, email, phone, subject, message } = body;
 
         // Validate required fields
         if (!name || !email || !message) {
+            console.error('Missing required fields');
             return NextResponse.json(
                 { message: 'Chybí povinné údaje (jméno, email nebo zpráva).' },
                 { status: 400 }
             );
         }
 
+        // Check Env Vars
+        if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+            console.error('Missing Environment Variables');
+            console.error('SMTP_HOST:', process.env.SMTP_HOST ? 'Set' : 'Missing');
+            console.error('SMTP_USER:', process.env.SMTP_USER ? 'Set' : 'Missing');
+            console.error('SMTP_PASS:', process.env.SMTP_PASS ? 'Set' : 'Missing');
+            return NextResponse.json(
+                { message: 'Server Configuration Error: Missing Environment Variables' },
+                { status: 500 }
+            );
+        }
+
+        console.log('Creating transporter with host:', process.env.SMTP_HOST);
+
         // Create a transporter using SMTP credentials
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
-            port: process.env.SMTP_PORT,
-            secure: process.env.SMTP_PORT == 465, // true for 465, false for other ports
+            port: Number(process.env.SMTP_PORT) || 465,
+            secure: true, // Force secure for port 465
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASS,
             },
+            debug: true, // Enable debug logs
+            logger: true // Log to console
         });
+
+        console.log('Verifying connection...');
+        await transporter.verify();
+        console.log('Connection verified');
 
         // Email content
         const mailOptions = {
-            from: `"${name}" <${process.env.SMTP_USER}>`, // Sender address (must be authenticated user usually)
-            to: process.env.CONTACT_EMAIL_TO, // Receiver address
+            from: `"${name}" <${process.env.SMTP_USER}>`,
+            to: process.env.CONTACT_EMAIL_TO,
             replyTo: email,
             subject: subject || `Nová zpráva z kontaktního formuláře od ${name}`,
             text: `
@@ -53,16 +75,22 @@ export async function POST(request) {
         };
 
         // Send email
+        console.log('Sending email...');
         await transporter.sendMail(mailOptions);
+        console.log('Email sent successfully');
 
         return NextResponse.json(
             { message: 'Zpráva byla úspěšně odeslána!' },
             { status: 200 }
         );
     } catch (error) {
-        console.error('Error sending email:', error);
+        console.error('Error in API route:', error);
         return NextResponse.json(
-            { message: 'Chyba při odesílání zprávy.', error: error.message },
+            {
+                message: 'Chyba při odesílání zprávy.',
+                error: error.message,
+                stack: error.stack
+            },
             { status: 500 }
         );
     }
