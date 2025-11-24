@@ -9,10 +9,10 @@ export default function Portofolio({ isLight = false }) {
   const [filtered, setFiltered] = useState(portfolioItems);
   const categories = [
     "All",
+    "Tiskoviny",
+    "Merchandise",
     "Branding",
     "Design",
-    "Tiskoviny",
-    "Marketing",
   ];
   useEffect(() => {
     if (activeCategory == "All") {

@@ -491,7 +491,7 @@ export const portfolioItems8 = [
     description: "Development",
     width: 410,
     height: 457,
-    categories: ["Design", "Tiskoviny", "Marketing"],
+    categories: ["Design", "Tiskoviny", "Merchandise"],
   },
   {
     id: 2,
@@ -500,7 +500,7 @@ export const portfolioItems8 = [
     description: "Development",
     width: 410,
     height: 457,
-    categories: ["Branding", "Tiskoviny", "Marketing"],
+    categories: ["Branding", "Tiskoviny", "Merchandise"],
   },
   {
     id: 3,
@@ -509,7 +509,7 @@ export const portfolioItems8 = [
     description: "Development",
     width: 410,
     height: 457,
-    categories: ["Branding", "Design", "Marketing"],
+    categories: ["Branding", "Design", "Merchandise"],
   },
   {
     id: 4,
@@ -536,7 +536,7 @@ export const portfolioItems8 = [
     description: "Development",
     width: 410,
     height: 457,
-    categories: ["Branding", "Design", "Tiskoviny", "Marketing"],
+    categories: ["Branding", "Design", "Tiskoviny", "Merchandise"],
   },
 ].map((elm) => {
   return {

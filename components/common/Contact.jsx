@@ -1,5 +1,5 @@
 "use client";
-import emailjs from "@emailjs/browser";
+
 import React, { useRef } from "react";
 import { toast } from "react-toastify";
 import Image from "next/image";
@@ -9,46 +9,45 @@ export default function Contact({
 }) {
   const form = useRef();
 
-  const sandMail = (e) => {
+  const sandMail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        // EmailJS service ID - identifies which email service to use
-        "service_cyobi0y",
+    const formData = new FormData(form.current);
+    const data = Object.fromEntries(formData.entries());
 
-        // EmailJS template ID - specifies which email template to use
-        "template_4nbexqj",
-
-        // Reference to the HTML form element containing user input
-        form.current,
-
-        {
-          // Public API key for authentication with EmailJS
-          publicKey: "D79JdTqxXVCcQBXL4",
-        }
-      )
-      .then((res) => {
-        if (res.status == 200) {
-          toast.success("Zpráva byla úspěšně odeslána!", {
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          form.current.reset();
-        } else {
-          toast.error("Chyba! Zpráva nebyla odeslána!", {
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-        }
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
       });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        toast.success("Zpráva byla úspěšně odeslána!", {
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        form.current.reset();
+      } else {
+        throw new Error(result.message || 'Chyba při odesílání');
+      }
+    } catch (error) {
+      toast.error(`Chyba! ${error.message}`, {
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   };
   return (
     <section className={parentClass} id="contacts">
