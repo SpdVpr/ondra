@@ -4,7 +4,7 @@ export const portfolioItems = [
   {
     id: 95,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/Wargaming/a_side_vinyl.png",
+    imageSrc: "/assets/images/ondra/wargaming.jpg",
     width: 1920,
     height: 1572,
     title: "Wargaming.net - Wargaming.net",
@@ -27,7 +27,7 @@ export const portfolioItems = [
   {
     id: 96,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/Pizza Club Neapol/Brand book - koncept/Artboard 2@300x.png",
+    imageSrc: "/assets/images/ondra/pizza_brand.jpg",
     width: 1920,
     height: 1572,
     title: "Pizza Club Neapol - Brand manual",
@@ -52,7 +52,7 @@ export const portfolioItems = [
   {
     id: 97,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/Pizza Club Neapol/Brand- final/logo_glow@300x.png",
+    imageSrc: "/assets/images/ondra/pizza_cllub_final.jpg",
     width: 1920,
     height: 1572,
     title: "Pizza Club Neapol - Brand",
@@ -196,7 +196,7 @@ export const portfolioItems = [
   {
     id: 4,
     animationOrder: 4,
-    imageSrc: "/assets/images/ondra/MF dnes/01_uvod.jpg",
+    imageSrc: "/assets/images/ondra/maj_mfdnes.jpg",
     width: 1939,
     height: 1572,
     title: "Příloha MF dnes – Máj",
