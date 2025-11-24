@@ -28,6 +28,12 @@ export async function POST(request) {
             );
         }
 
+        // Debug Password (Safe)
+        const pass = process.env.SMTP_PASS;
+        console.log('DEBUG: SMTP_PASS length:', pass.length);
+        console.log('DEBUG: SMTP_PASS start:', pass.substring(0, 2));
+        console.log('DEBUG: SMTP_PASS end:', pass.substring(pass.length - 2));
+
         console.log('Creating transporter with host:', process.env.SMTP_HOST);
 
         // Create a transporter using SMTP credentials
