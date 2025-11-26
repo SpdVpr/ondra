@@ -99,7 +99,7 @@ export default function Contact({
                     width={560}
                     height={114}
                     style={{
-                      margin: "0 auto",
+                      marginLeft: "50px",
                       maxWidth: "100%",
                       height: "auto",
                       padding: "0 20px"
