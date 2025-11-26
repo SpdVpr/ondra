@@ -19,7 +19,7 @@
         }
 
         @media (min-width: 1400px) {
-            height: 675px;
+            height: 762px;
         }
     }
 
@@ -102,8 +102,8 @@
     }
 }
 
-.latest-portfolio-card-style-two{
-    &:hover{
+.latest-portfolio-card-style-two {
+    &:hover {
         .img-secondary {
             transform: translateX(-50%) scaleX(2);
             opacity: 0;
@@ -118,7 +118,7 @@
     }
 }
 
-.latest-portfolio-card.v5{
+.latest-portfolio-card.v5 {
     &:hover {
         .img-secondary {
             transform: translateX(-50%) scaleX(2);
@@ -143,6 +143,7 @@
     border: 2px solid var(--color-border);
     overflow: hidden;
     height: 100%;
+
     .blog-content-wrap {
         padding: 30px;
 
@@ -219,6 +220,7 @@
     background: var(--color-gray-2);
     overflow: hidden;
     height: 100%;
+
     .blog-card-img {
         position: relative;
 
@@ -318,18 +320,20 @@
     &.search-area {
         padding: 40px;
         position: relative;
-        input{
+
+        input {
             height: 60px;
             border-radius: 8px;
             padding-right: 60px;
         }
-        button{
+
+        button {
             position: absolute;
             right: 0;
             top: 50%;
             transform: translateY(-50%);
         }
-    }   
+    }
 
     /*== Search Area ==*/
     .search-area {
@@ -705,6 +709,7 @@
             @media #{variables.$sm-layout} {
                 margin-bottom: 10px;
             }
+
             @media #{variables.$large-mobile} {
                 font-size: 22px;
             }
@@ -824,10 +829,12 @@
         font-weight: 700;
         line-height: 30px;
         transition: all 0.4s ease;
+
         @media #{variables.$small-mobile} {
             width: 45px;
-            height: 45px;        
+            height: 45px;
         }
+
         &:hover {
             color: var(--color-primary);
             background: var(--color-primary);
@@ -975,12 +982,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+
     .prev-btn,
     .next-btn,
     .tmp--next-prev-btn {
         display: flex;
         align-items: center;
         gap: 30px;
+
         .btn-content {
             .title {
                 color: var(--color-heading);
@@ -993,9 +1002,11 @@
                 flex-wrap: wrap;
                 display: none;
                 transition: var(--transition);
+
                 &:hover {
                     color: var(--color-primary);
                 }
+
                 @media (min-width: 768px) {
                     display: flex;
                 }
@@ -1015,6 +1026,7 @@
             }
         }
     }
+
     .swiper-btn-prev,
     .swiper-btn-next,
     .tmp-arrow-btn {
@@ -1028,16 +1040,20 @@
         border-radius: 100px;
         border: 2px solid var(--color-border);
         transition: var(--transition);
+
         i {
             transition: var(--transition);
         }
+
         &:hover {
             background: var(--color-primary);
             border-color: var(--color-primary);
+
             i {
                 color: var(--color-white) !important;
             }
         }
+
         button {
             border: 0 none;
             padding: 0;
@@ -1121,9 +1137,11 @@
         flex-wrap: wrap;
         padding-bottom: 40px;
         border-bottom: 1px solid #202020;
-        &:last-child{
+
+        &:last-child {
             border-bottom: none;
         }
+
         @media (min-width: 768px) {
             flex-wrap: inherit;
         }
@@ -1135,6 +1153,7 @@
             padding: 15px;
             background: var(--color-gray-2);
             border-radius: 50%;
+
             &.tmponhover::after {
                 border-radius: 50%;
             }
@@ -1273,6 +1292,7 @@
             min-height: 130px;
             resize: inherit;
             transition: var(--transition);
+
             &::placeholder {
                 color: var(--color-heading);
                 font-family: var(--font-secondary);
@@ -1318,22 +1338,25 @@
     }
 }
 
-.card-1-body{
+.card-1-body {
     .blog-card-style-two .blog-content-wrap {
         @media #{variables.$laptop-device} {
             padding: 10px;
         }
     }
+
     .custom-title {
         @media #{variables.$laptop-device} {
             font-size: 18px;
         }
     }
+
     .tab-content-overlay-to-top {
         @media screen and (max-width: 1400px) {
             margin-top: 0;
         }
     }
+
     .tmp-contact-about-inner {
         @media #{variables.$sm-layout} {
             flex-direction: column;
