@@ -4,7 +4,7 @@ export const portfolioItems = [
   {
     id: 95,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/wargaming.jpg",
+    imageSrc: "/assets/images/ondra/nahledovky/wargaming.jpg",
     width: 1920,
     height: 1572,
     title: "Wargaming.net - Wargaming.net",
@@ -27,7 +27,7 @@ export const portfolioItems = [
   {
     id: 96,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/pizza_brand.jpg",
+    imageSrc: "/assets/images/ondra/nahledovky/pizza_brand.jpg",
     width: 1920,
     height: 1572,
     title: "Pizza Club Neapol - Brand manual",
@@ -52,7 +52,7 @@ export const portfolioItems = [
   {
     id: 97,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/pizza_cllub_final.jpg",
+    imageSrc: "/assets/images/ondra/nahledovky/pizza_cllub_final.jpg",
     width: 1920,
     height: 1572,
     title: "Pizza Club Neapol - Brand",
@@ -74,7 +74,7 @@ export const portfolioItems = [
   {
     id: 98,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/Levels-Fotostena/fotka_out.jpg",
+    imageSrc: "/assets/images/ondra/nahledovky/fotostena.jpg",
     width: 1920,
     height: 1572,
     title: "Levels - Fotostěna",
@@ -96,7 +96,7 @@ export const portfolioItems = [
   {
     id: 99,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/Levels-Menu/01_02.png",
+    imageSrc: "/assets/images/ondra/nahledovky/Lev_menu.jpg",
     width: 1920,
     height: 1572,
     title: "Levels - Menu",
@@ -124,7 +124,7 @@ export const portfolioItems = [
   {
     id: 1,
     animationOrder: 1,
-    imageSrc: "/assets/images/ondra/tricko-web.jpg",
+    imageSrc: "/assets/images/ondra/nahledovky/levels_merch.jpg",
     width: 1920,
     height: 1572,
     title: "Merchandise Levels",
@@ -145,7 +145,7 @@ export const portfolioItems = [
   {
     id: 2,
     animationOrder: 2,
-    imageSrc: "/assets/images/ondra/fly-vista/02_03.jpg",
+    imageSrc: "/assets/images/ondra/nahledovky/FV_menu.jpg",
     width: 1939,
     height: 1572,
     title: "Fly Vista - menu",
@@ -171,7 +171,7 @@ export const portfolioItems = [
   {
     id: 3,
     animationOrder: 3,
-    imageSrc: "/assets/images/ondra/Maj/mockup.jpg",
+    imageSrc: "/assets/images/ondra/nahledovky/cukrovi.jpg",
     width: 1939,
     height: 1572,
     title: "Máj – House of Fun – Obaly na cukroví",
@@ -196,7 +196,7 @@ export const portfolioItems = [
   {
     id: 4,
     animationOrder: 4,
-    imageSrc: "/assets/images/ondra/maj_mfdnes.jpg",
+    imageSrc: "/assets/images/ondra/nahledovky/maj_mfdnes.jpg",
     width: 1939,
     height: 1572,
     title: "Příloha MF dnes – Máj",
