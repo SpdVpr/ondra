@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 export default function Portofolio({ isLight = false }) {
   const [activeCategory, setActiveCategory] = useState("All");
   const [filtered, setFiltered] = useState(portfolioItems);
+  const [visibleCount, setVisibleCount] = useState(4);
   const categories = [
     "All",
     "Tiskoviny",
@@ -22,7 +23,16 @@ export default function Portofolio({ isLight = false }) {
         portfolioItems.filter((elm) => elm.categories.includes(activeCategory))
       );
     }
+    // Reset visible count when category changes
+    setVisibleCount(4);
   }, [activeCategory]);
+
+  const handleLoadMore = () => {
+    setVisibleCount(prevCount => prevCount + 4);
+  };
+
+  const visibleItems = filtered.slice(0, visibleCount);
+  const hasMore = visibleCount < filtered.length;
 
   return (
     <section
@@ -65,7 +75,7 @@ export default function Portofolio({ isLight = false }) {
           <div className="tab-content bg-blur-style-one">
             <div className="tab-pane fade show active">
               <div className="row">
-                {filtered.map((item) => (
+                {visibleItems.map((item) => (
                   <div className="col-lg-6" key={item.id}>
                     <div
                       className={`latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-${item.animationOrder}`}
@@ -129,6 +139,26 @@ export default function Portofolio({ isLight = false }) {
                   </div>
                 ))}
               </div>
+              {hasMore && (
+                <div className="row mt--40">
+                  <div className="col-12 text-center">
+                    <button
+                      className="tmp-btn hover-icon-reverse radius-round btn-border btn-md"
+                      onClick={handleLoadMore}
+                    >
+                      <span className="icon-reverse-wrapper">
+                        <span className="btn-text">Načíst další</span>
+                        <span className="btn-icon">
+                          <i className="fa-sharp fa-regular fa-arrow-down" />
+                        </span>
+                        <span className="btn-icon">
+                          <i className="fa-sharp fa-regular fa-arrow-down" />
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

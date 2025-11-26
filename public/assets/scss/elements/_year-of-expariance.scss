@@ -31,7 +31,7 @@
     padding: 36px 52px 51px 52px;
 
     @media (min-width: 1400px) {
-        padding: 36px 52px 51px 52px;
+        padding: 5px 52px 51px 52px;
     }
 
     @media #{variables.$sm-layout} {
@@ -43,15 +43,19 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 10px;
+
         @media #{variables.$lg-layout} {
             gap: 20px;
         }
+
         @media #{variables.$large-mobile} {
             display: block;
         }
+
         @media (min-width: 568px) {
             gap: 44px;
         }
+
         .year-number {
             color: var(--color-primary);
             font-family: var(--font-primary);
@@ -60,17 +64,21 @@
             font-weight: 700;
             margin-bottom: 0;
             flex-basis: 40%;
+
             @media #{variables.$lg-layout} {
                 font-size: 100px;
             }
+
             @media #{variables.$md-layout} {
                 font-size: 100px;
             }
+
             @media #{variables.$sm-layout} {
                 font-size: 100px;
                 line-height: 1;
             }
         }
+
         .year-title {
             color: var(--color-heading);
             font-family: var(--font-primary);
@@ -79,26 +87,33 @@
             line-height: 130%;
             text-transform: capitalize;
             margin-bottom: 0;
+
             @media #{variables.$lg-layout} {
                 font-size: 37px;
             }
+
             @media #{variables.$md-layout} {
                 font-size: 37px;
             }
+
             @media #{variables.$sm-layout} {
                 font-size: 32px;
-                br{
+
+                br {
                     display: none;
                 }
             }
+
             @media #{variables.$large-mobile} {
                 font-size: 26px;
-                br{
+
+                br {
                     display: none;
                 }
             }
         }
     }
+
     .year-para {
         color: var(--color-heading);
         font-family: var(--font-secondary);
@@ -115,6 +130,7 @@
     border-radius: 20px;
     background: var(--color-gray-2);
     height: 100%;
+
     .counter-title {
         color: var(--color-heading);
         text-align: center;
@@ -124,10 +140,12 @@
         line-height: 60px;
         text-transform: capitalize;
         margin-bottom: 0;
+
         @media #{variables.$laptop-device} {
             font-size: 40px;
         }
     }
+
     .counter-para {
         color: var(--color-gray);
         text-align: center;

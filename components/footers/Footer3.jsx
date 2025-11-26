@@ -145,7 +145,7 @@ export default function Footer3({
             alt="footer-img"
             width={437}
             height={430}
-            src="/assets/images/logo/omega_color.svg"
+            src="/assets/images/ondra/omega_uprava.svg"
           />
         </div>
       </footer>{" "}

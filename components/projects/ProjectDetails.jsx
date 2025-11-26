@@ -26,7 +26,7 @@ export default function ProjectDetails({ portfolioItem }) {
               <h2 className="title">{portfolioItem.title}</h2>
               <div className="docs" dangerouslySetInnerHTML={{ __html: portfolioItem.description }} />
               {portfolioItem.gallery && portfolioItem.gallery.length > 0 && (
-                <div className="project-details-swiper-wrapper">
+                <div className="project-details-swiper-wrapper mt--50">
                   <Swiper
                     className="swiper project-details-swiper"
                     slidesPerView={2}

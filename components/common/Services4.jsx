@@ -14,7 +14,7 @@ export default function Services4() {
             Váš úspěch
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            Komplexní grafické služby od konceptu po finální realizaci. Specializuji se na 
+            Komplexní grafické služby od konceptu po finální realizaci. Specializuji se na
             tiskové materiály, tvorbu vizuální identity a profesionální zpracování zakázek.
           </p>
         </div>
@@ -23,9 +23,8 @@ export default function Services4() {
             {serviceCards2.map((card, index) => (
               <div
                 key={index}
-                className={`service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${
-                  index + 1
-                }`}
+                className={`service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${index + 1
+                  }`}
               >
                 <h2 className="service-card-num">
                   <span>{card.number}</span>
@@ -40,7 +39,7 @@ export default function Services4() {
               <Image
                 className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
                 alt="OMGraphics Logo"
-                src="/assets/images/logo/omega_color.svg"
+                src="/assets/images/ondra/omega_uprava.svg"
                 width={600}
                 height={395}
               />
