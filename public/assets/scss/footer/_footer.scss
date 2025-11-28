@@ -536,3 +536,28 @@
     }
   }
 }
+
+// Mobile fixes
+.ft-link {
+  a[href^="mailto"] {
+    word-break: break-all;
+  }
+}
+
+@media #{variables.$sm-layout} {
+  .footer-style-one {
+    .ft-title {
+      margin-bottom: 20px;
+    }
+
+    .description {
+      margin-top: 10px;
+    }
+  }
+
+  .single-footer-wrapper {
+    .social-link {
+      margin-top: 20px;
+    }
+  }
+}
