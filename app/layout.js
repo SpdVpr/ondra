@@ -9,6 +9,9 @@ export const metadata = {
     "OMGraphics - Grafický Design & Branding | Ondřej Macoun",
   description:
     "Portfolio grafického designéra Ondřeje Macouna. Specializuji se na branding, webdesign a tvorbu vizuálních identit pro české i zahraniční klienty.",
+  icons: {
+    icon: "/assets/images/ondra/omega_uprava.svg",
+  },
 };
 export default function RootLayout({ children }) {
   return (
@@ -17,7 +20,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body>
-          <Script
+        <Script
           src="/assets/js/smooth.js"
           strategy="beforeInteractive"
         />
