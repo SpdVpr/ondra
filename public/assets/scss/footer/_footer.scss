@@ -538,9 +538,11 @@
 }
 
 // Mobile fixes
-.ft-link {
-  a[href^="mailto"] {
-    word-break: break-all;
+.email-break {
+  display: none;
+
+  @media #{variables.$sm-layout} {
+    display: block;
   }
 }
 

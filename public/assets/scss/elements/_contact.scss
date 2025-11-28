@@ -265,8 +265,10 @@
     }
 }
 
-.ft-link-wrap {
-    a {
-        word-break: break-all;
+.email-break {
+    display: none;
+
+    @media #{variables.$sm-layout} {
+        display: block;
     }
 }

@@ -126,7 +126,7 @@ export default function Footer3({
                       <span className="ft-icon">
                         <i className="fa-solid fa-envelope" />
                       </span>
-                      <a href="mailto:ondrej.macoun@omgraphics.cz">ondrej.macoun@omgraphics.cz</a>
+                      <a href="mailto:ondrej.macoun@omgraphics.cz">ondrej.macoun@<br className="email-break" />omgraphics.cz</a>
                     </li>
                     <li>
                       <span className="ft-icon">
