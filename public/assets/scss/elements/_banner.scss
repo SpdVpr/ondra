@@ -625,6 +625,16 @@
   }
 
   .inner {
+    padding-right: 70px;
+
+    @media #{variables.$md-layout} {
+      padding-right: 0;
+    }
+
+    @media #{variables.$sm-layout} {
+      padding-right: 0;
+    }
+
     .sub-title {
       color: var(--color-primary);
       font-family: var(--font-primary);
