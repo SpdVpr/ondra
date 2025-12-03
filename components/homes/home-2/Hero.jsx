@@ -52,10 +52,10 @@ export default function Hero() {
                   </span>
                 </h1>
                 <p className="disc tmp-scroll-trigger tmp-word-split animation-order-3">
-                  Grafice se věnuji <span>více než dvanáct let</span>. Nabízím široké spektrum služeb
-                  v oblasti grafiky, které zahrnují <span>návrh reklamních materiálů</span>, tvorbu firemní identity,
+                  Grafice se věnuji <span>více než dvanáct let</span>. Nabízím široké spektrum služeb,
+                  které zahrnuje <span>návrh reklamních materiálů</span>, tvorbu firemní identity,
                   brand manuály a také <span>velkoformátové tisky</span>. Zajišťuji kompletní proces – od prvotního konceptu
-                  až po realizaci, finální produkci a doručení
+                  až po realizaci, finální produkci a doručení.
                 </p>
                 <div className="button-area-banner-two tmp-scroll-trigger tmp-fade-in animation-order-4 d-none d-md-block">
                   <a
